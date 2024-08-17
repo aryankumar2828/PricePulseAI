@@ -1,11 +1,11 @@
 import HeroCarousel from "@/components/HeroCarousel"
 import Searchbar from "@/components/Searchbar"
 import Image from "next/image"
-{/*import { getAllProducts } from "@/lib/actions"*/}
+import { getAllProducts } from "@/lib/actions"
 import ProductCard from "@/components/ProductCard"
 
 const Home = async () => {
-  {/*const allProducts = await getAllProducts();*/}
+  const allProducts = await getAllProducts();
 
   return (
     <>
@@ -37,7 +37,6 @@ const Home = async () => {
           <HeroCarousel />
         </div>
       </section>
-      {/*}
 
       <section className="trending-section">
         <h2 className="section-text">Trending</h2>
@@ -48,7 +47,6 @@ const Home = async () => {
           ))}
         </div>
       </section>
-      */}
     </>
   )
 }
